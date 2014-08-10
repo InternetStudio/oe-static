@@ -2,16 +2,25 @@ body {
 	font-size: 14px;
 }
 
-a {
-	color: $red;
-}
 
-header nav {
+.logo {
 	a {
 		text-decoration: none;
-		&.active {
-			padding-bottom: 85px;
-			border-bottom: 2px solid #00f;
+		color: $white;
+	}
+}
+
+header {
+	color: $white;
+	nav {
+		a {
+			color: $white;
+			text-decoration: none;
+			&.active {
+				color: $white;
+				padding-bottom: 85px;
+				border-bottom: 2px solid #00f;
+			}
 		}
 	}
 }
