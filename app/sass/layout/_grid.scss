@@ -1,0 +1,28 @@
+.row {
+	@include row();
+	margin: 15px auto;
+}
+
+.interior, footer {
+	@include outer-container;
+}
+
+.one-half {
+	@include span-columns(6);
+}
+
+.one-third {
+	@include span-columns(4);
+}
+
+.two-thirds {
+	@include span-columns(8);
+}
+
+.one-sixth {
+	@include span-columns(2)
+}
+
+.five-sixths {
+	@include span-columns(10)
+}

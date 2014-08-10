@@ -1,0 +1,1 @@
+$('.content-section').prepend('<a class="back-to-top" href="#page-wrapper">back to top</a>');

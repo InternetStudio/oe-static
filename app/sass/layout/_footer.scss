@@ -1,0 +1,16 @@
+footer {
+	background-color: #cacaca;
+	padding: 0px 15px;
+}
+
+.social-media {
+	padding-left: 0px;
+	list-style-type: none;
+	li {
+		padding-right: 15px;
+		float: left;
+		&:last-of-type {
+			padding-right: 0px;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+body {
+	font-size: 14px;
+}
+
+a {
+	color: $red;
+}
+
+header nav {
+	a {
+		text-decoration: none;
+		&.active {
+			padding-bottom: 85px;
+			border-bottom: 2px solid #00f;
+		}
+	}
+}
+
+.sub-nav {
+	padding-left: 0px;
+	list-style-type: none;
+	li {
+		margin-bottom: 4px;
+	}
+}
+
+.header-aside {
+	font-size: 1.6em;
+}

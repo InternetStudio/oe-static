@@ -1,0 +1,30 @@
+.interior {
+	max-width: 980px;
+	padding: 15px;
+}
+
+.content-section {
+	border-top: 1px solid #cacaca;
+	position: relative;
+}
+
+.back-to-top {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.blog-post {
+	border-top: 1px solid #cacaca;
+	blockquote {
+		width: 60%;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 1.2em;
+	}
+	img {
+		margin: 0 auto;
+		width: 80%;
+		display: block;
+	}
+}
