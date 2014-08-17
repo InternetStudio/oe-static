@@ -1,19 +1,20 @@
 header {
     background-color: $teal;
-    padding: 13px 0 10px 0;
     width: 100%;
-    height: 45px;
-    margin-bottom: 100px;
-    position: relative;
+    font-size: 1.25em;
+    .row {
+        max-width: 980px;
+        margin: 0px auto;
+        padding: 18px 0 9px 0;
+        text-align: center;
+    }
     .logo {
-        position: absolute;
-        left: 20px;
+        float: left;
     }
     nav {
-        width: 100%;
-        max-width: 100%;
+        margin: 0 auto;
         text-align: center;
-        display: inline-block;
+        height: 2em;
         ul {
             display: inline-block;
             list-style: none;
@@ -21,16 +22,40 @@ header {
             padding: 0;
             li {
                 float: left;
-                padding-right: 40px;
-                &:last-of-type {
-                    padding-right: 0px;
-                }
+                margin-right: 40px;
             }
+        }
+        .menu-link {
+            display: none;
+            cursor: pointer;
         }
     }
     .location-year {
-        position: absolute;
-        top: 13px;
-        right: 20px;
+        float: right;
+    }
+}
+
+@media only screen and (max-width: $medium-break) { 
+    header {
+        .logo {
+            float: none;
+        }
+        .location-year {
+            float: none;
+            font-size: .8em;
+        }  
+        nav {
+            height: auto;
+            ul {
+                display: none;
+                li {
+                    float: none;
+                    margin: 0px;
+                }
+            }
+            .menu-link {
+                display: block;
+            }
+        }
     }
 }

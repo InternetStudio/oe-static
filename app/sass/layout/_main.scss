@@ -15,8 +15,21 @@ img {
 	max-width: 100%;
 }
 
+hr {
+    border-top: 1px solid $teal;
+    margin: 10px 0 10px 0;
+    display: block;
+}
+
 .back-to-top {
-	position: fixed;
-	top: 120px;
-	right: 60px;
+    right: 40px;
+    top: 100px;
+    position: fixed;
+    display: none;
+    background: url('../img/top.png');
+    a {
+        width: 40px;
+        height: 40px;
+        display: block;
+    }
 }

@@ -1,10 +1,21 @@
 footer {
-	background-color: #cacaca;
+	border-top: 1px solid $teal;
 	padding: 0px 15px;
+	max-width: 980px;
+}
+
+.footer-contact {
+	float: left;
+}
+
+.footer-newsletter {
+	float: right;
 }
 
 .social-media {
-	padding-left: 0px;
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
 	list-style-type: none;
 	li {
 		padding-right: 15px;
@@ -12,5 +23,23 @@ footer {
 		&:last-of-type {
 			padding-right: 0px;
 		}
+	}
+}
+
+@media only screen and (max-width : $medium-break) { 
+	.footer-contact {
+		float: none;
+		padding: 20px 0;
+		display: block;
+	}
+
+	.footer-newsletter {
+		float: none;
+		padding: 20px 0;
+		display: block;
+	}
+
+	.social-media {
+		padding: 20px 0;
 	}
 }

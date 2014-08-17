@@ -35,7 +35,7 @@ module.exports = function (grunt) {
             },
             js: {
                 files: ['<%= config.app %>/scripts/{,*/}*.js'],
-                tasks: ['jshint'],
+                tasks: ['jshint', 'copy:scripts'],
                 options: {
                     livereload: true
                 }
@@ -135,9 +135,7 @@ module.exports = function (grunt) {
                     src: ['*.scss'],
                     dest: '../wordpress/wp-content/themes/oewebsite/styles',
                     ext: '.css'
-                }
-                ],
-
+                }],
                 options: {
                     loadPath: [
                         '<%= config.app %>/bower_components/bourbon/dist',
@@ -315,6 +313,14 @@ module.exports = function (grunt) {
                         'styles/fonts/{,*/}*.*'
                     ]
                 }]
+            },
+            scripts: {
+                expand: true,
+                dot: true,
+                cwd: '<%= config.app %>',
+                dest: '../wordpress/wp-content/themes/oewebsite/',
+                src: 'scripts/*.js'
+
             },
             styles: {
                 expand: true,

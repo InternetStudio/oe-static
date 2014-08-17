@@ -1,7 +1,55 @@
 body {
-	font-size: 14px;
+	font-size: 16px;
+	font-family: 'Helvetica', sans-serif;
 }
 
+a {
+	color: $teal;
+	&:visited, &:active {
+		color: $teal;
+	}
+	&:hover {
+		font-style: italic;
+	}
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.313em;
+	padding-bottom: 20px;
+}
+
+h1 {
+	font-size: 1.75em;
+	line-height: 1.875em;
+}
+h2 {
+	font-size: 1.3125em;
+	padding-bottom: 6px;
+}
+h3 {
+	font-size: 1em;
+	line-height: 1.613em;
+	font-weight: 700;
+	padding-bottom: 6px;
+}
+h4 {
+	font-size: 1.2em;
+}
+
+ul {
+	padding-bottom: 20px;
+	li {
+		margin-left: 20px;
+	}
+}
+
+ol {
+	padding-bottom: 20px;
+	li {
+		margin-left: 22px;
+	}
+}
 
 .logo {
 	a {
@@ -16,23 +64,84 @@ header {
 		a {
 			color: $white;
 			text-decoration: none;
-			&.active {
+			&:visited, &:active {
 				color: $white;
-				padding-bottom: 85px;
-				border-bottom: 2px solid #00f;
+			}
+			&:hover {
+				font-style: normal;
+			}
+		}
+		li {
+			&.current-menu-item {
+				color: $white;
+				border-bottom: 2px solid $white;
+				padding-bottom: 2px;
+			}
+			&:hover {
+					border-bottom: 2px solid $white;
+					padding-bottom: 2px;
 			}
 		}
 	}
 }
 
-.sub-nav {
-	padding-left: 0px;
-	list-style-type: none;
+#secondary {
 	li {
-		margin-bottom: 4px;
+		list-style-type: none;
+		margin-left: 0px;
+		font-size: 1.625em;
+		line-height: 1.875em;
+		a {
+			text-decoration: none;
+		}
+	}
+	.widget-title {
+		margin-bottom: 30px;
+		a {
+			text-decoration: none;
+			padding-bottom: 4px;
+			border-bottom: 2px solid $teal;
+		}
 	}
 }
 
 .header-aside {
 	font-size: 1.6em;
+}
+
+.entry-title {
+	margin-top: -.21em;
+	margin-bottom: 30px;
+}
+
+footer {
+	text-align: center;
+}
+
+@media only screen and (max-width: $medium-break) { 
+	header {
+		nav {
+			li {
+				&.current-menu-item {
+					color: $white;
+					border-bottom: 0px;
+					padding-bottom: 0px;
+					a {
+						text-decoration: underline;
+					}					
+				}
+				&:hover {
+					border-bottom: 0px;
+					padding-bottom: 0px;
+
+				}
+			}
+		}
+	}
+	#secondary {
+		li {
+			font-size: 1.25em;
+			line-height: 1em;
+		}
+	}
 }

@@ -1,6 +1,10 @@
 .row {
 	@include row();
-	margin: 15px auto;
+	margin: 25px auto 15px auto;
+}
+
+.entry-content .row:first-of-type {
+	margin-top: 0px;
 }
 
 .interior, footer {
@@ -25,4 +29,26 @@
 
 .five-sixths {
 	@include span-columns(10)
+}
+
+.one-fourth {
+	@include span-columns(3)
+}
+
+.three-fourths {
+	@include span-columns(9)
+}
+
+.one-twelfth {
+	@include span-columns(1)
+}
+
+
+@media only screen and (max-width : $medium-break) { 
+	.one-half, .one-third, .two-thirds, .one-fourth, .three-fourths, .one-sixth, .five-sixths, .one-twelfth {
+		@include span-columns(12);
+	}
+	.row {
+		margin: 0px auto;
+	}
 }
