@@ -5,11 +5,16 @@ footer {
 }
 
 .footer-contact {
+	text-align: left;
 	float: left;
 }
 
 .footer-newsletter {
+	text-align: left;
 	float: right;
+	.mc_merge_var  {
+		margin-bottom: 0px;
+	}
 }
 
 .social-media {

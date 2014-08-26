@@ -37,24 +37,26 @@ header {
 
 @media only screen and (max-width: $medium-break) { 
     header {
-        .logo {
-            float: none;
-        }
+        padding-right: 15px;    
+        padding-left: 15px;    
         .location-year {
-            float: none;
-            font-size: .8em;
+            display: none;
         }  
         nav {
-            height: auto;
             ul {
                 display: none;
+                float: right; 
+                clear: right;
+                text-align: right;
                 li {
                     float: none;
                     margin: 0px;
                 }
             }
             .menu-link {
+                float: right;
                 display: block;
+                margin: 5px auto;
             }
         }
     }

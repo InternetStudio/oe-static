@@ -1,6 +1,9 @@
 .row {
 	@include row();
 	margin: 25px auto 15px auto;
+	&:last-of-type {
+		margin-bottom: 0px;
+	}
 }
 
 .entry-content .row:first-of-type {

@@ -4,10 +4,15 @@
 	margin-top: 80px;
 }
 
-.entry-content {
-	margin-top: .7em;
-	padding-bottom: 20px;
+.home .interior {
+	margin-top: 10px;
+}
 
+.entry-content {
+	margin-top: .4em;
+	padding-bottom: 20px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
 }
 
 .blog-post {
@@ -15,6 +20,8 @@
 		display: block;
 		border-top: 1px solid $teal;
 }
+
+
 
 @media only screen and (max-width : $medium-break) { 
 	.interior {
