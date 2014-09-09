@@ -1,6 +1,7 @@
 $red: #f00;
 $white: #ffffff;
 $teal: #28B09A;
-$light-teal: #DFF3F0;
+$light-teal: lighten($teal, 50%);
+// $light-teal: #DFF3F0;
 
 $medium-break: 780px;

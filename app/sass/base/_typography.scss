@@ -15,14 +15,14 @@ a {
 
 p {
 	font-size: 1em;
-	line-height: 1.313em;
+	line-height: 1.513em;
 	padding-bottom: 20px;
 }
 
 h1 {
 	font-size: 1.75em;
-	line-height: 1.875em;
 }
+
 h2 {
 	font-size: 1.3125em;
 	padding-bottom: 6px;
@@ -51,6 +51,10 @@ ol {
 	}
 }
 
+.wp-caption .wp-caption-text {
+	font-size: 12px;
+}
+
 .logo {
 	padding-bottom: 6px;
 	&:hover {
@@ -77,7 +81,7 @@ header {
 			}
 			&:hover {
 				font-style: normal;
-				text-decoration: underline;
+				text-decoration: none;
 			}
 		}
 		li {
@@ -99,9 +103,10 @@ header {
 		list-style-type: none;
 		margin-left: 0px;
 		font-size: 1.625em;
-		line-height: 1.875em;
+		line-height: 1.875em;	
 		a {
 			text-decoration: none;
+			border-bottom: 0px;
 		}
 	}
 	.widget-title {
@@ -118,13 +123,40 @@ header {
 	font-size: 1.6em;
 }
 
+.post-header {
+	ul {
+		list-style-type: none;
+		li {
+			font-weight: bold;
+			padding-left: 0px;
+			margin-left: 0px;
+		}
+	}
+}
+
 .entry-title {
 	margin-top: -.21em;
-	margin-bottom: 30px;
+	padding-bottom: 20px;
+}
+
+.interior a {
+	text-decoration: none;
+	padding-bottom: 2px;
+	border-bottom: 2px solid $teal;
+	&.no-border-bottom {
+		border-bottom: 0px;
+	}
+}
+
+a img {
+	border-bottom: 0px;
 }
 
 footer {
 	text-align: center;
+	&#colophon .mc_custom_border_hdr {
+		text-align: left;
+	}
 }
 
 @media only screen and (max-width: $medium-break) { 
@@ -151,6 +183,9 @@ footer {
 		li {
 			font-size: 1.25em;
 			line-height: 1em;
+		}
+		.widget-title {
+			font-size: 20px;
 		}
 	}
 }

@@ -46,6 +46,19 @@
 	@include span-columns(1)
 }
 
+.five-twelfths {
+	@include span-columns(5)
+}
+
+.twelve-twelfths {
+	@include span-columns(12)
+}
+
+// float main content right just for blog
+.blog-post .two-thirds {
+	float: right;
+}
+
 
 @media only screen and (max-width : $medium-break) { 
 	.one-half, .one-third, .two-thirds, .one-fourth, .three-fourths, .one-sixth, .five-sixths, .one-twelfth {

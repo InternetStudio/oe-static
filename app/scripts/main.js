@@ -31,7 +31,17 @@ function toggleMenu(){
 	});
 }
 
+function stupidLinkBorderImageThing(){
+	$('a').has('img').addClass('no-border-bottom');
+}
+
+function addPlaceholder(target, text) {
+	$(target).attr('placeholder', text);
+}
+
 $(document).ready(function(){
 	back2Top();
 	toggleMenu();
+	stupidLinkBorderImageThing();
+	addPlaceholder('#mc_mv_EMAIL', 'Email');
 });

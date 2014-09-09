@@ -1,0 +1,12 @@
+@mixin button(){
+	border-radius: 5px;
+	border: 0px;
+	height: 2.1em;
+	background-color: $teal;
+	color: $light-teal;
+	font-size: 1em;
+	&:hover {
+		background-color: $white;
+		color: $teal;
+	}
+}

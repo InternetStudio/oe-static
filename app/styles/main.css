@@ -364,12 +364,11 @@ a {
 
 p {
   font-size: 1em;
-  line-height: 1.313em;
+  line-height: 1.513em;
   padding-bottom: 20px; }
 
 h1 {
-  font-size: 1.75em;
-  line-height: 1.875em; }
+  font-size: 1.75em; }
 
 h2 {
   font-size: 1.3125em;
@@ -394,6 +393,9 @@ ol {
   ol li {
     margin-left: 22px; }
 
+.wp-caption .wp-caption-text {
+  font-size: 12px; }
+
 .logo {
   padding-bottom: 6px; }
   .logo:hover {
@@ -414,7 +416,7 @@ header {
       color: white; }
     header nav a:hover {
       font-style: normal;
-      text-decoration: underline; }
+      text-decoration: none; }
   header nav li.current-menu-item {
     color: white;
     border-bottom: 2px solid white;
@@ -429,7 +431,8 @@ header {
   font-size: 1.625em;
   line-height: 1.875em; }
   #secondary li a {
-    text-decoration: none; }
+    text-decoration: none;
+    border-bottom: 0px; }
 #secondary .widget-title {
   margin-bottom: 20px; }
   #secondary .widget-title a {
@@ -440,12 +443,31 @@ header {
 .header-aside {
   font-size: 1.6em; }
 
+.post-header ul {
+  list-style-type: none; }
+  .post-header ul li {
+    font-weight: bold;
+    padding-left: 0px;
+    margin-left: 0px; }
+
 .entry-title {
   margin-top: -.21em;
-  margin-bottom: 30px; }
+  padding-bottom: 20px; }
+
+.interior a {
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #28b09a; }
+  .interior a.no-border-bottom {
+    border-bottom: 0px; }
+
+a img {
+  border-bottom: 0px; }
 
 footer {
   text-align: center; }
+  footer#colophon .mc_custom_border_hdr {
+    text-align: left; }
 
 @media only screen and (max-width: 780px) {
   header nav li.current-menu-item {
@@ -460,7 +482,9 @@ footer {
 
   #secondary li {
     font-size: 1.25em;
-    line-height: 1em; } }
+    line-height: 1em; }
+  #secondary .widget-title {
+    font-size: 20px; } }
 .row {
   display: block;
   margin: 25px auto 15px auto; }
@@ -547,6 +571,25 @@ footer {
   .one-twelfth:last-child {
     margin-right: 0; }
 
+.five-twelfths {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%; }
+  .five-twelfths:last-child {
+    margin-right: 0; }
+
+.twelve-twelfths {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .twelve-twelfths:last-child {
+    margin-right: 0; }
+
+.blog-post .two-thirds {
+  float: right; }
+
 @media only screen and (max-width: 780px) {
   .one-half, .one-third, .two-thirds, .one-fourth, .three-fourths, .one-sixth, .five-sixths, .one-twelfth {
     float: left;
@@ -612,21 +655,24 @@ header {
   padding: 0.2em 0; }
 
 body {
-  background: #dff3f0;
+  background: #dff8f4;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #28b09a; }
 
 img {
   max-width: 100%; }
 
-hr {
-  border-top: 1px solid #28b09a;
+hr, .home .interior hr {
+  border-top: 2px solid #28b09a;
   margin: 10px 0 10px 0;
   display: block; }
 
+.interior hr {
+  border-top: 1px solid #28b09a; }
+
 .back-to-top {
-  right: 40px;
-  top: 100px;
+  right: 20px;
+  top: 40px;
   position: fixed;
   display: none;
   background: url("../img/top.png"); }
@@ -635,8 +681,60 @@ hr {
     height: 40px;
     display: block; }
 
+.coming-soon {
+  background-color: white; }
+
+.coming-soon div {
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 5%; }
+  .coming-soon div img {
+    max-width: 100%; }
+
+.search-submit {
+  border-radius: 5px;
+  border: 0px;
+  height: 2.1em;
+  background-color: #28b09a;
+  color: #dff8f4;
+  font-size: 1em;
+  color: #dff8f4; }
+  .search-submit:hover {
+    background-color: white;
+    color: #28b09a; }
+
+#mc_signup {
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px; }
+
+.mc_merge_var {
+  float: left; }
+  .mc_merge_var .mc_header_email {
+    display: none; }
+  .mc_merge_var .mc_input {
+    padding: 7px; }
+
+.mc_signup_submit {
+  float: left; }
+
+#mc_signup_submit {
+  margin-top: 0px !important;
+  width: 100% !important;
+  margin-left: 10px;
+  padding-top: 4px;
+  border-radius: 5px;
+  border: 0px;
+  height: 2.1em;
+  background-color: #28b09a;
+  color: #dff8f4;
+  font-size: 1em; }
+  #mc_signup_submit:hover {
+    background-color: white;
+    color: #28b09a; }
+
 footer {
-  border-top: 1px solid #28b09a;
+  border-top: 2px solid #28b09a;
   padding: 0px 15px;
   max-width: 980px; }
 
@@ -673,38 +771,81 @@ footer {
     display: block; }
 
   .social-media {
-    padding: 20px 0; } }
+    padding: 20px 0; }
+
+  footer {
+    text-align: left; }
+
+  .row {
+    padding-top: 20px; } }
 .interior {
   max-width: 980px;
   padding: 15px;
   margin-top: 80px; }
+  .interior article img {
+    padding-bottom: 20px; }
+  .interior .wp-caption img {
+    padding-bottom: 10px; }
 
-.home .interior {
-  margin-top: 10px; }
+.home .interior, .archive .interior {
+  margin-top: 16px; }
 
 .entry-content {
   margin-top: .4em;
   padding-bottom: 20px;
-  margin-bottom: 0px;
-  padding-bottom: 0px; }
+  margin-bottom: 0px; }
 
 .blog-post {
-  padding-top: 40px;
+  padding-top: 10px;
   display: block;
-  border-top: 1px solid #28b09a; }
+  border-top: 2px solid #28b09a; }
+
+.wp-caption {
+  text-align: center; }
+
+.home-top-mobile, .blog-top-mobile {
+  display: none; }
 
 @media only screen and (max-width: 780px) {
-  .interior {
+  article {
     max-width: 80%;
-    margin-top: 40px; }
+    margin: 40px auto 0 auto;
+    padding-top: 20px; }
+
+  .interior {
+    padding: 0px;
+    margin-top: 0px; }
+
+  .entry-content {
+    max-width: 80%;
+    margin: 0 auto; }
+
+  .blog-post .entry-content {
+    max-width: 100%;
+    margin: 0 auto; }
+
+  .widget {
+    margin: 0px; }
 
   #secondary {
+    padding: 15px;
+    background-color: #fff;
     text-align: left; }
-    #secondary .widget_subpages {
-      border-bottom: 1px solid #28b09a; }
-      #secondary .widget_subpages ul {
-        display: inline-block; }
-        #secondary .widget_subpages ul li {
-          width: 40%;
-          float: left;
-          margin-bottom: 20px; } }
+    #secondary .widget_subpages ul {
+      display: inline-block;
+      padding: 0 0 0 0; }
+      #secondary .widget_subpages ul li {
+        width: 40%;
+        float: left;
+        margin-bottom: 20px; }
+
+  .home-top, .blog-top {
+    display: none; }
+
+  .home-top-mobile, .blog-top-mobile {
+    display: block; }
+
+  .post-navigation {
+    display: inline-block;
+    width: 100%;
+    padding: 20px; } }

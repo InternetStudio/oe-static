@@ -15,15 +15,19 @@ img {
 	max-width: 100%;
 }
 
-hr {
-    border-top: 1px solid $teal;
+hr, .home .interior hr {
+    border-top: 2px solid $teal;
     margin: 10px 0 10px 0;
     display: block;
 }
 
+.interior hr {
+    border-top: 1px solid $teal;
+}
+
 .back-to-top {
-    right: 40px;
-    top: 100px;
+    right: 20px;
+    top: 40px;
     position: fixed;
     display: none;
     background: url('../img/top.png');
@@ -32,4 +36,51 @@ hr {
         height: 40px;
         display: block;
     }
+}
+
+.coming-soon {
+    background-color: $white;
+}
+
+.coming-soon div {
+    margin: 0 auto;
+    width: 80%; 
+    padding-top: 5%;
+    img {
+        max-width: 100%;
+    }
+}
+
+.search-submit {
+    @include button();
+    color: $light-teal;
+}
+
+//  mailchimp stuff
+#mc_signup {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.mc_merge_var {
+    float: left;
+    .mc_header_email {
+        display: none;
+    }
+    .mc_input {
+        padding: 7px;
+    }
+}
+
+.mc_signup_submit {
+    float: left;
+}
+
+#mc_signup_submit {
+    margin-top: 0px !important;
+    width: 100% !important;
+    margin-left: 10px;
+    padding-top: 4px;
+    @include button();
 }
