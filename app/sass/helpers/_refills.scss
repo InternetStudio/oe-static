@@ -58,6 +58,8 @@
   .vertical-tab-content-container {
     display: block;
     margin: 0 auto;
+    border-left: 2px solid $teal;
+    border-right: 2px solid $teal;
 
 
     & a:focus { 
@@ -65,23 +67,28 @@
     }
 
     @include media($vertical-tab-mode) {
+      border: 0px;
       display: inline-block;
       float: right;
-      @include size(80% auto);
+      @include size(75% auto);
+      margin-right: 2.5%;
       // background-color: $tab-content-background;
     }
   }
 
   .vertical-tab-content {
     // background-color: $tab-content-background;
-    padding: $base-spacing $gutter;
+    padding: $base-spacing/2 $gutter/2;
+    border-bottom: 2px solid $teal;
     @include media($vertical-tab-mode) {
       border: none;
       display: none;
     }
   }
   .vertical-tab-accordion-heading {
-    border-top: $teal;
+    border-bottom: 2px solid $teal;
+    border-top: 0px;
+    color: $teal;
     cursor: pointer;
     display: block;
     font-weight: bold;
@@ -90,7 +97,10 @@
       color: $base-accent-color;
     }
     &:first-child {
-      border-top: none;
+      border-top: 2px solid $teal;
+    }
+    &.is-active {
+      border-bottom: 0px;
     }
     @include media($vertical-tab-mode) {
       display: none;
@@ -108,6 +118,10 @@ $expander-toggle-margin: 1em;
   font-size: .8em;
 }
 
+.event-location {
+  padding-bottom: 20px;
+}
+
 .interior a.expander-trigger {
   // @include user-select(none);
   cursor: pointer;
@@ -115,17 +129,26 @@ $expander-toggle-margin: 1em;
   font-size: $expander-toggle-size;
   margin-bottom: $expander-toggle-size;
   padding-bottom: $expander-toggle-size / 4;
-  // border-bottom: 0px;
+  border-bottom: 0px;
 }
 
-
 .expander-content {
-  border-bottom: 1px solid $teal;
+  border-bottom: 2px solid $teal;
   padding-bottom: 14px;
   margin-bottom: 14px;
+}
+
+.expander-toggle-arrow {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin-right: 8px;  
+  @include background-image(url("../img/circle-right.svg"));
+  &.open {
+    @include transform(rotate(90deg));
+  }
 }
 
 .expander-hidden.expander-content {
   display: none;
 }
-

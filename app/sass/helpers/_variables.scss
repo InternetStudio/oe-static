@@ -4,4 +4,4 @@ $teal: #28B09A;
 $light-teal: lighten($teal, 50%);
 // $light-teal: #DFF3F0;
 
-$medium-break: 780px;
+$medium-break: $medium-screen;

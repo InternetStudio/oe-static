@@ -171,6 +171,11 @@ footer {
 	}
 }
 
+.schedule-day-page-content {
+	font-size: 1.3em;
+	border-bottom: 2px solid $teal;
+}
+
 @media only screen and (max-width: $medium-break) { 
 	header {
 		nav {
