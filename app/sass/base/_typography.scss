@@ -70,6 +70,18 @@ ol {
 	}
 }
 
+.location-year {
+	a {
+		text-decoration: none;
+		color: $white;
+		&:hover {
+			font-style: normal;
+			border-bottom: 2px solid $white;
+			padding-bottom: 8px;
+		}
+	}
+}
+
 header {
 	color: $white;
 	nav {
