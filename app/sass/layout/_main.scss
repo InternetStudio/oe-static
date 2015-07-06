@@ -6,24 +6,24 @@
 }
 
 body {
-    background: $light-teal;
+    background: $white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: $teal;
+    color: $black;
 }
 
 img {
 	max-width: 100%;
 }
 
-hr, .home .interior hr {
-    border-top: 2px solid $teal;
-    margin: 10px 0 10px 0;
-    display: block;
-}
+// hr, .home .interior hr {
+//     border-top: 2px solid $teal;
+//     margin: 10px 0 10px 0;
+//     display: block;
+// }
 
-.interior hr {
-    border-top: 1px solid $teal;
-}
+// .interior hr {
+//     border-top: 1px solid $teal;
+// }
 
 .back-to-top {
     right: 20px;
@@ -75,12 +75,71 @@ hr, .home .interior hr {
 
 .mc_signup_submit {
     float: left;
+    margin-left: 10px; 
 }
 
 #mc_signup_submit {
     margin-top: 0px !important;
     width: 100% !important;
-    margin-left: 10px;
-    padding-top: 4px;
+    padding-top: 8px;
     @include button();
+}
+
+// homepage stuff
+
+.homepage-hero {
+    background-image: url(../img/oe_web_hero_950x550.jpg);
+    background-repeat: no-repeat;
+    background-size: 90% auto;
+    background-position: center top;
+    min-height: 583px;
+    padding-top: 40px;
+    margin: 40px auto;
+    text-align: center;
+    position: relative;
+    p {
+        font-size: 2.8em;
+        font-family: $source-font;
+        font-weight: 800;
+        line-height: 1.1em;
+        padding-bottom: 10px;
+    }
+    .hero-logo {
+        top: -60px;
+        position: relative;
+    }
+    &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 20px;
+        position: relative;
+        top: 40px;
+        background: url(../img/squiggle.jpg) no-repeat bottom;
+    }
+}
+
+@media only screen and (max-width : 920px) { 
+    .homepage-hero {
+        display: block;
+        // background-size: 80%;
+        background-color: #fff;
+        // margin-top: 0;
+        padding-bottom: 60px;
+        @include linear-gradient(to top, $white 1%, lighten($orange, 5%) 1%, lighten($orange, 5%), lighten($pink, 5%) 60%);
+        min-height: 0;
+        p {
+            // font-size: 4vw;
+        }
+    }
+    .hero-logo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width : $medium-screen) { 
+    .homepage-hero p {
+        font-size: 2em;
+    }
+
 }

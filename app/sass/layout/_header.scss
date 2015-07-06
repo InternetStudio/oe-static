@@ -1,28 +1,34 @@
 header {
-    background-color: $teal;
+    background-color: $header-color;
     width: 100%;
     font-size: 1.25em;
+
     .row {
         max-width: 980px;
         margin: 0px auto;
         padding: 18px 0 9px 0;
-        text-align: center;
+        // text-align: center;
     }
     .logo {
         float: left;
     }
     nav {
         margin: 0 auto;
-        text-align: center;
         height: 2em;
+
         ul {
             display: inline-block;
             list-style: none;
             margin: 0 auto;
             padding: 0;
-            li {
-                float: left;
-                margin-right: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            li:last-of-type {
+                // background: -webkit-linear-gradient($pink, $orange);
+                @include linear-gradient(90deg, $pink, $orange);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
         }
         .menu-link {

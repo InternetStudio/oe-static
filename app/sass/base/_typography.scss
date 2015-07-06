@@ -4,9 +4,10 @@ body {
 }
 
 a {
-	color: $teal;
+	color: $orange;
+	text-decoration: none;
 	&:visited, &:active {
-		color: $teal;
+		color: $orange;
 	}
 	&:hover {
 		font-style: italic;
@@ -55,20 +56,20 @@ ol {
 	font-size: 12px;
 }
 
-.logo {
-	padding-bottom: 6px;
-	&:hover {
-		border-bottom: 2px solid $white;
-		padding-bottom: 4px;
-	}
-	a {
-		text-decoration: none;
-		color: $white;
-		&:hover {
-			font-style: normal;
-		}
-	}
-}
+// .logo {
+// 	padding-bottom: 6px;
+// 	&:hover {
+// 		border-bottom: 2px solid $white;
+// 		padding-bottom: 4px;
+// 	}
+// 	a {
+// 		text-decoration: none;
+// 		color: $white;
+// 		&:hover {
+// 			font-style: normal;
+// 		}
+// 	}
+// }
 
 .location-year {
 	a {
@@ -92,19 +93,9 @@ header {
 				color: $white;
 			}
 			&:hover {
+				color: $pink;
 				font-style: normal;
 				text-decoration: none;
-			}
-		}
-		li {
-			&.current-menu-item {
-				color: $white;
-				border-bottom: 2px solid $white;
-				padding-bottom: 2px;
-			}
-			&:hover {
-					border-bottom: 2px solid $white;
-					padding-bottom: 2px;
 			}
 		}
 	}
@@ -126,7 +117,7 @@ header {
 		a {
 			text-decoration: none;
 			padding-bottom: 4px;
-			border-bottom: 2px solid $teal;
+			border-bottom: 2px solid $black;
 		}
 	}
 }
@@ -151,18 +142,18 @@ header {
 	padding-bottom: 20px;
 }
 
-.interior a {
-	text-decoration: none;
-	padding-bottom: 2px;
-	border-bottom: 2px solid $teal;
-	&.no-border-bottom {
-		border-bottom: 0px;
-	}
-}
+// .interior a {
+// 	text-decoration: none;
+// 	padding-bottom: 2px;
+// 	border-bottom: 2px solid $orange;
+// 	&.no-border-bottom {
+// 		border-bottom: 0px;
+// 	}
+// }
 
-a img {
-	border-bottom: 0px;
-}
+// a img {
+// 	border-bottom: 0px;
+// }
 
 footer {
 	text-align: center;

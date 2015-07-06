@@ -1,7 +1,16 @@
 $red: #f00;
 $white: #ffffff;
-$teal: #28B09A;
-$light-teal: lighten($teal, 50%);
+$teal: #669966;
+$light-teal: lighten($teal, 40%);
+$black: #000;
+$pink: #ff9bb7;
+$orange: #f07449;
+$purple: #9962ab;
+
+$source-font: 'Source Serif Pro', serif;
+
+$header-color: $black;
+
 // $light-teal: #DFF3F0;
 
 $medium-break: $medium-screen;
