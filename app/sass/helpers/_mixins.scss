@@ -10,3 +10,11 @@
 		// color: black;
 	}
 }
+
+// @mixin lineartextgradient($color1, $color2)
+// {
+//     color: mix($color1, $color2);
+//     background: -webkit-gradient(90deg, from($color1), to($color2));
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+// }

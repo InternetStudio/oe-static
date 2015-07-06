@@ -115,7 +115,8 @@ img {
         height: 20px;
         position: relative;
         top: 40px;
-        background: url(../img/squiggle.jpg) no-repeat bottom;
+        background: url(../img/oe_squiggle-01.png) no-repeat bottom;
+        background-size: 950px 6px;
     }
 }
 
@@ -139,7 +140,7 @@ img {
 
 @media only screen and (max-width : $medium-screen) { 
     .homepage-hero p {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
 }

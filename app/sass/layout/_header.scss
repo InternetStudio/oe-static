@@ -22,13 +22,15 @@ header {
             margin: 0 auto;
             padding: 0;
             width: 100%;
-            display: flex;
-            justify-content: space-between;
+            @include display(flex);
+            @include justify-content(space-between);
             li:last-of-type {
-                // background: -webkit-linear-gradient($pink, $orange);
-                @include linear-gradient(90deg, $pink, $orange);
+                // color: mix($pink, $orange);
+                @include linear-gradient(90deg, $pink, $orange, $fallback: red);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+                background: none;
+                // @include lineartextgradient($pink, $orange);
             }
         }
         .menu-link {
