@@ -2,7 +2,9 @@ header {
     background-color: $header-color;
     width: 100%;
     font-size: 1.25em;
-
+    .mobile-logo {
+        display: none;
+    }
     .row {
         max-width: 980px;
         margin: 0px auto;
@@ -25,12 +27,9 @@ header {
             @include display(flex);
             @include justify-content(space-between);
             li:last-of-type {
-                // color: mix($pink, $orange);
-                @include linear-gradient(90deg, $pink, $orange, $fallback: red);
+                @include linear-gradient(90deg, $pink, $orange);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                background: none;
-                // @include lineartextgradient($pink, $orange);
             }
         }
         .menu-link {
@@ -50,6 +49,11 @@ header {
         .location-year {
             display: none;
         }  
+        .mobile-logo {
+            display: inline-block;
+            float: left;
+            margin-top: 5px;
+        }
         nav {
             ul {
                 display: none;

@@ -55,3 +55,15 @@ footer {
 		padding-top: 20px;
 	}
 }
+
+@media only screen and (max-width : $small-break) { 
+	.mc_merge_var {
+		width: 100%;
+		margin-bottom: 0em !important;
+	}
+	.mc_signup_submit {
+		margin-left: 0px;
+		width: 100%;
+		margin-bottom: 1em;
+	}
+}

@@ -910,6 +910,8 @@ header {
   background-color: #000;
   width: 100%;
   font-size: 1.25em; }
+  header .mobile-logo {
+    display: none; }
   header .row {
     max-width: 980px;
     margin: 0px auto;
@@ -942,12 +944,11 @@ header {
       justify-content: space-between;
       -ms-flex-pack: justify; }
       header nav ul li:last-of-type {
-        background-color: red;
+        background-color: #ff9bb7;
         background-image: -webkit-linear-gradient(-360deg, #ff9bb7, #f07449);
         background-image: linear-gradient(90deg,#ff9bb7, #f07449);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background: none; }
+        -webkit-text-fill-color: transparent; }
     header nav .menu-link {
       display: none;
       cursor: pointer; }
@@ -960,6 +961,10 @@ header {
     padding-left: 15px; }
     header .location-year {
       display: none; }
+    header .mobile-logo {
+      display: inline-block;
+      float: left;
+      margin-top: 5px; }
     header nav ul {
       display: none;
       float: right;
@@ -991,7 +996,8 @@ img {
   top: 40px;
   position: fixed;
   display: none;
-  background: url("../img/top.png"); }
+  background: url("../img/top.png") no-repeat;
+  background-size: 40px; }
   .back-to-top a {
     width: 40px;
     height: 40px;
@@ -1137,6 +1143,15 @@ footer {
 
   .row {
     padding-top: 20px; } }
+@media only screen and (max-width: 25em) {
+  .mc_merge_var {
+    width: 100%;
+    margin-bottom: 0em !important; }
+
+  .mc_signup_submit {
+    margin-left: 0px;
+    width: 100%;
+    margin-bottom: 1em; } }
 .interior {
   max-width: 980px;
   padding: 15px;
